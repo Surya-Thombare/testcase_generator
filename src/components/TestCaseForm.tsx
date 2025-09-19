@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import * as z from "zod"
 import { format } from "date-fns"
 import { generateId } from "../lib/mockData"
-import { TestCaseStatus } from "../lib/types"
 import { StepInstruction } from "./StepInstruction"
 import { RequiredFieldsNote } from "./RequiredFieldsNote"
 
@@ -28,7 +27,7 @@ import {
   SelectValue,
 } from "./ui/select"
 
-import type { Module, TestCasePriority, TestStep } from "../lib/types"
+import type { Module, TestStep } from "../lib/types"
 
 // Define form schema with zod
 const formSchema = z.object({
